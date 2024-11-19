@@ -9,12 +9,14 @@ function App() {
   const appClass = false ? "App dark" : "App light"
 
   return (
-    <div className={appClass}>
+    <div className="App dark">
+      <div className="App light">
       <header>
         <h2>Shopster</h2>
         <button>Dark Mode</button>
       </header>
       <ShoppingList items={itemData} />
+    </div>
     </div>
   );
 }
